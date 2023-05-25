@@ -7,7 +7,7 @@ import DashboardPage from '../../pages/home/DashboardPage';
 import SideNav from './SideNav';
 import MuiDrawer from '@mui/material/Drawer';
 import MuiAppBar from '@mui/material/AppBar';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import withErrorBoundary from '../../hoc/withErrorBoundary';
 import { AppContext } from '../../context/AppContextProvider';
 import { styled, useTheme } from '@mui/material/styles';
@@ -134,6 +134,7 @@ function PrivateLayout() {
           <Box component="main" sx={{ flexGrow: 1, p: 3, zIndex: 1 }}>
             <DrawerHeader />
             <Routes>
+              <Route path="/" element={<Navigate to="/dashboard" />} />
               <Route path="/dashboard" element={<DashboardPage />} />
               <Route path="/dashboard/member-management" element={<MemberPage />} />
               <Route path="/dashboard/member-management/Abc123/detail" element={<MemberDetailPage />} />
