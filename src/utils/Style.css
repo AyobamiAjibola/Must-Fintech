@@ -1,0 +1,15 @@
+
+.headers {
+    color: #333333;
+    font-weight: 600;
+    font-size: 18;
+}
+.custom-link {
+    text-decoration: underline;
+    color: black;
+  }
+
+.custom-link:hover {
+    color: #00B2B2;
+    text-decoration: underline;
+}
