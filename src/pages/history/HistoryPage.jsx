@@ -16,7 +16,7 @@ function HistoryPage (){
                 fontWeight: 'bold', fontSize: 20
               }}
             >
-              HistoryPage
+              ChangeHistoryPage
             </Typography>
           </Box>
         </React.Fragment>

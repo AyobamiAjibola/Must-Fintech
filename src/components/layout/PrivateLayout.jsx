@@ -25,6 +25,7 @@ import TaxPage from '../../pages/tax/TaxPage';
 import ExhibitionPage from '../../pages/exhibition/ExhibitionPage';
 import SystemManagementPage from '../../pages/system-management/SystemManagementPage';
 import Page_not_found from '../../pages/page_404/Page_not_found';
+import HistoryPage from '../../pages/history/HistoryPage';
 
 const drawerWidth = DRAWER_WIDTH;
 
@@ -166,6 +167,10 @@ function PrivateLayout() {
               <Route
                 path="/dashboard/system-management"
                 element={<SystemManagementPage />}
+              />
+              <Route
+                path="/dashboard/changes-history"
+                element={<HistoryPage />}
               />
               <Route
                 path="*"
