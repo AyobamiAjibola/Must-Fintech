@@ -6,5 +6,10 @@ export default defineConfig({
   plugins: [react()],
   define: {
     'process.env': process.env
+  },
+  build: {
+    rollupOptions: {
+      external: ['antd/dist/reset.css']
+    }
   }
 })
